@@ -59,17 +59,13 @@ extension TestTableViewController: UITableViewDelegate {
 extension TestTableViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(self.applications.count)
         return self.applications.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        print("test")
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomCell") as! CustomCell
         cell.customLabel.text = self.applications[indexPath.row]["title"]
         
         let url = NSURL(string: self.applications[indexPath.row]["imageUrl"]!)
-        
-        print(self.applications[indexPath.row]["imageUrl"]!)
         let req = NSURLRequest(URL:url!)
 
         NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
