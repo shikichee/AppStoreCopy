@@ -19,6 +19,17 @@
 		49338DB41D0E985800502219 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338DB31D0E985800502219 /* TestTableViewController.swift */; };
 		49338DB61D0E9B4000502219 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49338DB51D0E9B4000502219 /* CustomCell.swift */; };
 		49338DBE1D0EA71900502219 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49338DBD1D0EA71900502219 /* SwiftyJSON.framework */; };
+		49C29D781D0FAED2007D737D /* AppStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C29D771D0FAED2007D737D /* AppStoreService.swift */; };
+		49C29D841D0FAFD5007D737D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D791D0FAFD5007D737D /* Moya.framework */; };
+		49C29D8B1D0FAFD5007D737D /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D801D0FAFD5007D737D /* ObjectMapper.framework */; };
+		49C29D8C1D0FAFD5007D737D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D811D0FAFD5007D737D /* Alamofire.framework */; };
+		49C29D911D0FB492007D737D /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D7A1D0FAFD5007D737D /* RxMoya.framework */; };
+		49C29D921D0FB492007D737D /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D7B1D0FAFD5007D737D /* ReactiveMoya.framework */; };
+		49C29D931D0FB492007D737D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D7C1D0FAFD5007D737D /* RxSwift.framework */; };
+		49C29D941D0FB492007D737D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D7D1D0FAFD5007D737D /* RxCocoa.framework */; };
+		49C29D961D0FB492007D737D /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D7F1D0FAFD5007D737D /* RxBlocking.framework */; };
+		49C29D971D0FB492007D737D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D821D0FAFD5007D737D /* Result.framework */; };
+		49C29D981D0FB492007D737D /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C29D831D0FAFD5007D737D /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +68,19 @@
 		49338DB31D0E985800502219 /* TestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 		49338DB51D0E9B4000502219 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		49338DBD1D0EA71900502219 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		49C29D771D0FAED2007D737D /* AppStoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreService.swift; sourceTree = "<group>"; };
+		49C29D791D0FAFD5007D737D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		49C29D7A1D0FAFD5007D737D /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		49C29D7B1D0FAFD5007D737D /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		49C29D7C1D0FAFD5007D737D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		49C29D7D1D0FAFD5007D737D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		49C29D7E1D0FAFD5007D737D /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
+		49C29D7F1D0FAFD5007D737D /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		49C29D801D0FAFD5007D737D /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		49C29D811D0FAFD5007D737D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		49C29D821D0FAFD5007D737D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		49C29D831D0FAFD5007D737D /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		49C29D9C1D0FBBA9007D737D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +89,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				49338DBE1D0EA71900502219 /* SwiftyJSON.framework in Frameworks */,
+				49C29D841D0FAFD5007D737D /* Moya.framework in Frameworks */,
+				49C29D911D0FB492007D737D /* RxMoya.framework in Frameworks */,
+				49C29D921D0FB492007D737D /* ReactiveMoya.framework in Frameworks */,
+				49C29D931D0FB492007D737D /* RxSwift.framework in Frameworks */,
+				49C29D941D0FB492007D737D /* RxCocoa.framework in Frameworks */,
+				49C29D961D0FB492007D737D /* RxBlocking.framework in Frameworks */,
+				49C29D8B1D0FAFD5007D737D /* ObjectMapper.framework in Frameworks */,
+				49C29D8C1D0FAFD5007D737D /* Alamofire.framework in Frameworks */,
+				49C29D971D0FB492007D737D /* Result.framework in Frameworks */,
+				49C29D981D0FB492007D737D /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +122,18 @@
 		49338D741D0E8CA600502219 = {
 			isa = PBXGroup;
 			children = (
+				49C29D9C1D0FBBA9007D737D /* XCTest.framework */,
+				49C29D791D0FAFD5007D737D /* Moya.framework */,
+				49C29D7A1D0FAFD5007D737D /* RxMoya.framework */,
+				49C29D7B1D0FAFD5007D737D /* ReactiveMoya.framework */,
+				49C29D7C1D0FAFD5007D737D /* RxSwift.framework */,
+				49C29D7D1D0FAFD5007D737D /* RxCocoa.framework */,
+				49C29D7E1D0FAFD5007D737D /* RxTests.framework */,
+				49C29D7F1D0FAFD5007D737D /* RxBlocking.framework */,
+				49C29D801D0FAFD5007D737D /* ObjectMapper.framework */,
+				49C29D811D0FAFD5007D737D /* Alamofire.framework */,
+				49C29D821D0FAFD5007D737D /* Result.framework */,
+				49C29D831D0FAFD5007D737D /* ReactiveCocoa.framework */,
 				49338DBD1D0EA71900502219 /* SwiftyJSON.framework */,
 				49338D7F1D0E8CA600502219 /* AppStoreCopy */,
 				49338D941D0E8CA700502219 /* AppStoreCopyTests */,
@@ -113,6 +159,7 @@
 				49338D821D0E8CA600502219 /* ViewController.swift */,
 				49338D841D0E8CA600502219 /* Main.storyboard */,
 				49338DB31D0E985800502219 /* TestTableViewController.swift */,
+				49C29D771D0FAED2007D737D /* AppStoreService.swift */,
 				49338DB11D0E94EB00502219 /* Second.storyboard */,
 				49338DAE1D0E94D500502219 /* Detail.storyboard */,
 				49338D871D0E8CA600502219 /* Assets.xcassets */,
@@ -278,6 +325,16 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
 			);
 			outputPaths = (
 			);
@@ -296,6 +353,7 @@
 				49338D811D0E8CA600502219 /* AppDelegate.swift in Sources */,
 				49338DB61D0E9B4000502219 /* CustomCell.swift in Sources */,
 				49338DB41D0E985800502219 /* TestTableViewController.swift in Sources */,
+				49C29D781D0FAED2007D737D /* AppStoreService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +502,12 @@
 		49338DA61D0E8CA700502219 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = AppStoreCopy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,10 +519,12 @@
 		49338DA71D0E8CA700502219 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = AppStoreCopy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -536,6 +598,7 @@
 				49338DA71D0E8CA700502219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49338DA81D0E8CA700502219 /* Build configuration list for PBXNativeTarget "AppStoreCopyTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +607,7 @@
 				49338DAA1D0E8CA700502219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49338DAB1D0E8CA700502219 /* Build configuration list for PBXNativeTarget "AppStoreCopyUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +616,7 @@
 				49338DAD1D0E8CA700502219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

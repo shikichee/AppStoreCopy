@@ -7,22 +7,27 @@
 //
 
 import UIKit
+import Moya
 import SwiftyJSON
 
 class TestTableViewController: UIViewController {
     var applications = [[String: String]]()
-
+    let provider = MoyaProvider<AppStoreService>()
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        let urlString = "https://itunes.apple.com/jp/rss/topfreeapplications/limit=30/json"
-        
-        if let url = NSURL(string: urlString) {
-            if let data = try? NSData(contentsOfURL: url, options: []) {
+        self.provider.request(.Ranking) { (result) in
+            switch result {
+            case let .Success(moyaResponse):
+                let data = moyaResponse.data
                 let json = JSON(data: data)
-                parseJson(json)
-                
+                self.parseJson(json)
+                self.tableView.reloadData()
+            case let .Failure(error):
+                print(error)
             }
         }
     }
@@ -44,10 +49,6 @@ class TestTableViewController: UIViewController {
             applications.append(["title":title, "category":category, "imageUrl":imageUrl])
         }
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
 
 extension TestTableViewController: UITableViewDelegate {
@@ -58,9 +59,11 @@ extension TestTableViewController: UITableViewDelegate {
 extension TestTableViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(self.applications.count)
         return self.applications.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        print("test")
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomCell") as! CustomCell
         cell.customLabel.text = self.applications[indexPath.row]["title"]
         

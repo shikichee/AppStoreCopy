@@ -59,7 +59,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="d0i-Qc-Ntu" id="nlc-X8-iRF"/>
+                                    <outlet property="dataSource" destination="d0i-Qc-Ntu" id="HnA-Kw-MzO"/>
                                     <outlet property="delegate" destination="d0i-Qc-Ntu" id="GiU-zW-xYS"/>
                                 </connections>
                             </tableView>
@@ -85,10 +85,13 @@
                         </variation>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="chA-ih-wXq" id="Uw3-QF-Rkk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLj-3T-fWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1771" y="481"/>
+            <point key="canvasLocation" x="1773" y="215"/>
         </scene>
     </scenes>
 </document>
