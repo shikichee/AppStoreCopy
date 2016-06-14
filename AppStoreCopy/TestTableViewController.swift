@@ -69,7 +69,6 @@ extension TestTableViewController: UITableViewDataSource {
         let req = NSURLRequest(URL:url!)
 
         NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
- 
             let image = UIImage(data:data!)
             cell.customImageView.image = image
         }
