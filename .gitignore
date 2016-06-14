@@ -1,0 +1,11 @@
+.DS_Store
+
+Carthage/Build
+
+.build/
+build/
+
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
